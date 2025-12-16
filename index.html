@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Guest Feedback</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h2>Guest Feedback</h2>
+      <p class="subtitle">Help us improve your experience</p>
+
+      <form id="feedbackForm" action="https://formspree.io/f/xjkndppz" method="POST">
+        <div class="form-group">
+          <label>Name (optional)</label>
+          <input type="text" name="name" placeholder="Your name" />
+        </div>
+
+        <div class="form-group">
+          <label>Room Number</label>
+          <input type="text" name="room" placeholder="e.g. 203" required />
+        </div>
+
+        <div class="form-group">
+          <label>Overall Experience</label>
+          <select name="rating" required>
+            <option value="">Select rating</option>
+            <option>Excellent</option>
+            <option>Good</option>
+            <option>Average</option>
+            <option>Poor</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Comments</label>
+          <textarea name="comments" rows="4" placeholder="Tell us more..."></textarea>
+        </div>
+
+        <button type="submit">Submit Feedback</button>
+      </form>
+
+      <div id="successMessage" class="success-message">
+        ✅ Thank you for your feedback! We appreciate your time.
+      </div>
+
+      <p class="footer-text">Thank you for staying with us</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+

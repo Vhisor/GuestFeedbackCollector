@@ -1,0 +1,107 @@
+/* ===================== style.css ===================== */
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f5f3ef; /* warm hotel background */
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  background: #ffffff; border-top: 6px solid #8b6b3d; /* hotel brand accent */
+  max-width: 420px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #8b6b3d;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #8b6b3d; /* luxury brown */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #6f542f;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+  margin-top: 15px;
+}
+
+/* Responsive tweak for larger screens */
+@media (min-width: 768px) {
+  .card {
+    max-width: 500px;
+  }
+}
+
+/* Success message */
+.success-message {
+  display: none;
+  margin-top: 15px;
+  padding: 12px;
+  background: #e7f3ec;
+  color: #2f6b4f;
+  border-radius: 6px;
+  font-size: 14px;
+  text-align: center;
+}
